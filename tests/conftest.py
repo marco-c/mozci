@@ -2,7 +2,7 @@
 import pytest
 from responses import RequestsMock
 
-from mozci.push import Push
+from mozci.push import MAX_DEPTH, Push
 from mozci.util.hgmo import HGMO
 
 
@@ -81,22 +81,22 @@ def create_push(monkeypatch, responses):
 @pytest.fixture
 def create_pushes(create_push):
     """Returns a factory method that creates a range of pushes.
-
-    The first push will set itself as it's own """
+    """
 
     def inner(num):
         pushes = []
+
+        # Create parents.
+        for j in range(MAX_DEPTH + 1):
+            create_push()
+
+        # Create our pushes.
         for i in range(num):
-            if i == 0:
-                pushes.append(create_push("first"))
-                pushes[0].parent = pushes[0]
+            pushes.append(create_push())
 
-            elif i == num - 1:
-                pushes.append(create_push("last"))
-                pushes[-1].child = pushes[-1]
-
-            else:
-                pushes.append(create_push())
+        # Create children.
+        for j in range(MAX_DEPTH + 1):
+            create_push()
 
         return pushes
 
