@@ -24,7 +24,7 @@ voluptuous = ">=0.11.7,<0.13.0"
 flake8 = "^3.8.3"
 
 [tool.poetry.dev-dependencies]
-pre-commit = "^2.7"
+pre-commit = "^2.8"
 pytest = "^6.1"
 tox = "^3.20"
 responses = "^0.12"
