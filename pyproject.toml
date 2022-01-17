@@ -32,7 +32,7 @@ ValidX = "^0.7"
 pre-commit = "^2.13"
 pytest = "^6.2"
 tox = "^3.23"
-responses = "^0.13"
+responses = "^0.17"
 sphinx = "^4.0.2"
 
 [tool.poetry.extras]
