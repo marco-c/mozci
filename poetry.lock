@@ -829,7 +829,7 @@ widechars = ["wcwidth"]
 
 [[package]]
 name = "taskcluster"
-version = "44.8.0"
+version = "44.12.1"
 description = "Python client for Taskcluster"
 category = "main"
 optional = false
@@ -1616,8 +1616,8 @@ tabulate = [
     {file = "tabulate-0.8.9.tar.gz", hash = "sha256:eb1d13f25760052e8931f2ef80aaf6045a6cceb47514db8beab24cded16f13a7"},
 ]
 taskcluster = [
-    {file = "taskcluster-44.8.0-py3-none-any.whl", hash = "sha256:275c3711317f106ec775c401799da88cde29e3bed51e35bcfbda55974c3a6225"},
-    {file = "taskcluster-44.8.0.tar.gz", hash = "sha256:67324bf05b2cfb2df06d6007ecdf9e480a19667f9c78ccb6c6dfa7d13fd6b8e6"},
+    {file = "taskcluster-44.12.1-py3-none-any.whl", hash = "sha256:356c5307ac515f33cbcbf310840c9d73854986750400b5b68a65bbf09c4bbe90"},
+    {file = "taskcluster-44.12.1.tar.gz", hash = "sha256:9323e68a8806e4eef50ebfc82d68d4adfa04ab111ce7cdf9df00db42d5a82f32"},
 ]
 taskcluster-urls = [
     {file = "taskcluster-urls-13.0.1.tar.gz", hash = "sha256:b25e122ecec249c4299ac7b20b08db76e3e2025bdaeb699a9d444556de5fd367"},
